@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>练习题</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	//////
+	// 练习题：
+	// 	1. 做错的一般都增加解释。另外有一些不确定或延伸的知识，也会加上注释。
+	// 	2. 另外有些对于js可能没有对应意义的题，但也有些会让人深思，故都写上了。
+	// 	3. 另有些无从求证的内容，暂时写上自己的理解。
+	// 	4. 有意义的都写，有些实在没有意义的就不写了。
+	// 
+	//////
+	
+	!function () {
+		// 1. 
+		console.log(( 0 + 15 ) / 2); // 7.5
+
+		// 2. 这里要注意科学计数法计算。
+		console.log(3.0e+3);
+		console.log( 2e-6 * 100000000.1 ) // 200.0000002
+
+		// 3.
+		console.log(true && false || true && true); // true
+
+		// 4.
+		console.log((1 + 2.236)/2); // 返回语句 1.618 
+		console.log(1 + 2 + 3 + 4.0); // 返回语句 10
+		console.log(4.1 >= 4); // 条件语句 true
+		console.log(1 + 2 + '3'); // 类型转换 '33'
+
+		// 5. 
+		function judge(a, b, c){
+			if(a === b === c){
+				console.log('equal');
+			}else{
+				console.log('not equal');
+			}
+		}
+		judge('2', '2', 2);
+
+		// 6. 这个判断不写了
+		// if(a > b) then c = 0;  js 不可以这么写哦
+		// 
+		
+		// 7. 将一个正整数 N 用 二进制表示，并转换为一个 String 类型的 s;
+		
+		
+	}();
+</script>
+</body>
+</html>

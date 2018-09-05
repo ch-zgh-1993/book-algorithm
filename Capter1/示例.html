@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>示例</title>
+</head>
+<body>
+
+<script type="text/javascript" src="../common.js"></script>
+<script type="text/javascript">
+	/////
+	// 计算两个非负整数 p 和 q 的最大公约数， 若 p 是 0， 则最大公约数为 q. 否则将 p 除以 q 得到余数 r , p 和 q 的最大公约数即为 q 和 r 的最大公约数。
+	// 
+	/////
+	
+	//  求 p 与 q 的最大公约数
+	function maxDivisor(p, q){
+		if(p < 0 || q < 0) {
+			console.log('输入必须大于0');
+			return;
+		}
+		if(p === 0){
+			return q;
+		}
+		if(q === 0){
+			return p;
+		}
+		return arguments.callee(q, p%q);
+	}
+
+	console.info(maxDivisor(10, 5));
+
+</script>
+</body>
+</html>
