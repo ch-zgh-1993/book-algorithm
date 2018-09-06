@@ -48,8 +48,96 @@
 		// 
 		
 		// 7. 将一个正整数 N 用 二进制表示，并转换为一个 String 类型的 s;
-		
-		
+		function trans(n){
+			return n.toString(2);
+		}
+		console.log(trans(10));
+
+		// 8. 打印出一个二维布尔数组的内容，使用 * 表示真值，使用 空格 表示假。打印出行号和列号。
+		function createTable(arr){
+			let tableArr = arr.map(val => {
+				let temp;
+				temp = val.map(val => {
+					let value;
+					if(val === true) value = '*';
+					if(val === false) value = ' ';
+					return value;
+				});
+				return temp;
+			});
+			console.table(tableArr);
+		}
+		createTable([[true, false], [false, true]]);
+
+		// 9. 看出结果吗？ ~_~
+		// 第二个错了哦。。 要注意数组在变化过程中，改变数组值将可能改变的一些结果。
+		!function(){
+			let arr = new Array(10); // undefind
+			for(let i = 0, len = arr.length; i < len; i++){
+				arr[i] = 9 - i;
+			}	// 9...0
+			console.log(arr);
+			for(let i = 0, len = arr.length; i < len; i++){
+				arr[i] = arr[arr[i]];
+			} // 0...9
+			// 正确值： 0 1 2 3 4 4 3 2 1 0
+			console.log(arr);
+			for(let i = 0, len = arr.length; i < len; i++){
+				console.log(i);
+			}// 0...9
+
+		}();
+
+		// 编写一个 lg() 接收一个整型参数 N, 返回不大于 log2N 的最大整数， 不要使用 Math 库。
+		// 
+		!function(){
+			// 先来个使用的:
+			function lguse(N){
+				return Math.floor(Math.log2(N));
+			}	
+			console.log(lguse(10));
+
+			// 接着就比较简单了
+			function lg(N, i){
+				if(N/2 > 2){
+					return lg(N/2, i+1);
+				}else{
+					return i + 1;
+				}
+			}	
+			console.log(lg(100, 0));
+
+		}();
+
+		//  参数 arr ，m. 返回一个长度为 m 的数组， 第 i 个元素为 i 在 arr 中出现的次数， arr 的值均为 0 - m-1 之间，那么 m 所有元素的和 = arr.length
+		//  
+		//  哇靠，真的相等啊。。。
+		!function(){
+			// 假设条件正常，
+			function histogram(arr, m){
+				let result = [];
+				for(let i = 0; i < m; i++){
+					let j = 0;
+					arr.forEach(val => {
+						if(val === i){
+							j++;
+						}
+					});
+					result.push(j);
+				}
+				console.log(arr, m , result);
+			}
+
+			let M = 10;
+			let arr = [];
+			for(let i = 0; i < 100; i++){
+				arr.push(Math.floor(Math.random()*10));
+			}
+			histogram(arr, M);
+
+		}();
+
+
 	}();
 </script>
 </body>
