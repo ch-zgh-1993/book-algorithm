@@ -137,6 +137,39 @@
 
 		}();
 
+		// 这个看不出来了，返回值：
+		!function(){
+			function exRl(n){
+				if(n <= 0) return "";
+				return exRl(n -3) + n + exRl(n - 2) + n;
+			}// x + 6 + y + 6
+			// (0) + 3 + (1) + 3 + 6 + (1) + 4 + (2) + 4 + 6
+			// "" + 3 + 1 + 1 + 3 + 6 + 1 + 1 + 4 + 2 + 2 + 4 + 6 = 311361132236
+			console.log(exRl(6));
+
+		}();
+
+		// 观察递归函数,给出返回值. 
+		// 说明的问题呢？？
+		// 任何整数一直除以2就会无限除下去，加起来的和肯定是无限大的。
+		// 
+		!function(){
+			function mystery(a, b){
+				if(b === 0) return 0;
+				if(b % 2 === 0) return mystery(a + a, b / 2);
+				return mystery(a + a, b / 2) + a;
+			}
+			console.log(mystery(2, 24)); // Infinity
+			console.log(mystery(3, 11)); // Infinity
+
+			function mystery(a, b){
+				if(b === 0) return 1;
+				if(b % 2 === 0) return mystery(a * a, b / 2);
+				return mystery(a * a, b / 2) + a;
+			}
+			console.log(mystery(2, 25)); // Infinity
+			console.log(mystery(3, 11)); // Infinity
+		}();
 
 	}();
 </script>
