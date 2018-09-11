@@ -4,3 +4,4 @@ there is all the exercise about the algorithm book, when i read and conside, i w
 
 ## Capter1 基础
 1. 自然语言与程序转换示例
+2. 习题
