@@ -1,0 +1,15 @@
+/*
+* @Author: Zhang Guohua
+* @Date:   2018-09-26 13:12:43
+* @Last Modified by:   zgh
+* @Last Modified time: 2018-09-26 13:12:56
+* @Description: create by zgh
+* @GitHub: Savour Humor
+*/
+
+Delete the C:\Users\username\algs4 folder (but save any of the .java files you created, if desired).
+Delete these additions from your user PATH environment variable.
+C:\Users\username\algs4\bin
+C:\Users\username\algs4\java\bin
+Delete the DrJava configuration file C:\Users\username\.drjava.
+Delete the shortcuts on the desktop to DrJava and the Command Prompt.
