@@ -2,7 +2,7 @@
 * @Author: Zhang Guohua
 * @Date:   2018-09-13 20:16:08
 * @Last Modified by:   zgh
-* @Last Modified time: 2018-09-25 18:53:08
+* @Last Modified time: 2018-09-27 18:31:22
 * @Description: create by zgh
 * @GitHub: Savour Humor
 */
@@ -41,4 +41,7 @@
 // 	输入输出：
 // 		交流模型：
 // 		命令参数：
+// 		标准输出:
+// 		标准输入:
+// 		
 // 	
