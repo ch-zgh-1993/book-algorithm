@@ -2,7 +2,7 @@
 * @Author: Zhang Guohua
 * @Date:   2018-09-13 20:16:08
 * @Last Modified by:   zgh
-* @Last Modified time: 2018-09-27 18:31:22
+* @Last Modified time: 2018-09-30 19:15:32
 * @Description: create by zgh
 * @GitHub: Savour Humor
 */
@@ -43,5 +43,13 @@
 // 		命令参数：
 // 		标准输出:
 // 		标准输入:
+// 		
+// 		重定向与管道：
+// 			重定向输出，也可以从文件中读取内容。
+// 			管道：将程序的输出重定向到另一个程序的输入，叫做管道。解决输出流，和运行细节问题。
+// 			
+// 		基于文件的输入输出：
+// 		标准会图库：
+// 			在数据分析和算法可视化时使用。
 // 		
 // 	
