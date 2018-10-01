@@ -2,7 +2,7 @@
 * @Author: Zhang Guohua
 * @Date:   2018-09-30 19:24:08
 * @Last Modified by:   zgh
-* @Last Modified time: 2018-09-30 20:15:20
+* @Last Modified time: 2018-10-01 19:10:58
 * @Description: create by zgh
 * @GitHub: Savour Humor
 */
@@ -14,6 +14,8 @@ import edu.princeton.cs.algs4.StdIn;
 // 
 // 本例中，程序包导入失败，，，
 // 查了是版本的问题，但是因要用 1.8 写方法，故暂不更改了。
+// 
+// 
 // 
 public class BinarySearch {
 	public static int rank(int key, int[] a)	{
