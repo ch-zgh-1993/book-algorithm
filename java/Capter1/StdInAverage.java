@@ -2,11 +2,11 @@
 * @Author: Zhang Guohua
 * @Date:   2018-09-30 18:36:07
 * @Last Modified by:   zgh
-* @Last Modified time: 2018-09-30 19:07:48
+* @Last Modified time: 2018-10-07 18:21:45
 * @Description: create by zgh
 * @GitHub: Savour Humor
 */
-import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdIn;-
 import edu.princeton.cs.algs4.StdOut;
 // 标注输入
 public class StdInAverage{

@@ -2,11 +2,11 @@
 * @Author: Zhang Guohua
 * @Date:   2018-09-30 19:24:08
 * @Last Modified by:   zgh
-* @Last Modified time: 2018-10-01 19:10:58
+* @Last Modified time: 2018-10-07 18:24:54
 * @Description: create by zgh
 * @GitHub: Savour Humor
 */
-import java.utils.Arrays;
+import java.util.Arrays;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdIn;
@@ -15,6 +15,7 @@ import edu.princeton.cs.algs4.StdIn;
 // 本例中，程序包导入失败，，，
 // 查了是版本的问题，但是因要用 1.8 写方法，故暂不更改了。
 // 
+// 是自己写错了
 // 
 // 
 public class BinarySearch {
