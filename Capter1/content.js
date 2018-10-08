@@ -2,10 +2,12 @@
 * @Author: Zhang Guohua
 * @Date:   2018-09-13 20:16:08
 * @Last Modified by:   zgh
-* @Last Modified time: 2018-10-01 19:12:58
+* @Last Modified time: 2018-10-08 20:16:59
 * @Description: create by zgh
 * @GitHub: Savour Humor
 */
+// 第一节： 编程模型
+// 
 // 基础编程模型： 
 // 		静态方法库
 // 		
@@ -54,5 +56,13 @@
 // 			
 // 		二分查找：
 // 			白名单过滤：
+// 			性能:
 // 		
-// 	
+// 	展望：
+// 		面向对象：
+// 
+// 		
+// 				
+// 		
+// 第二节： 面向对象：	
+// 

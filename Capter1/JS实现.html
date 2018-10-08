@@ -1,3 +1,11 @@
+<!--
+* @Author: Zhang Guohua
+* @Date:   2018-09-05 13:01:26
+* @Last Modified by:   zgh
+* @Last Modified time: 2018-10-08 20:07:32
+* @Description: create by zgh
+* @GitHub: Savour Humor
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,6 +38,33 @@
 
 	console.info(maxDivisor(10, 5));
 
+
+	//////
+	// 二分法查找 
+	// 
+	//////
+
+	function BinarySearch(key, arr){
+		arr.sort((a, b) => {
+			return a - b;
+		});
+		let result;
+		let low = 0; 
+		let high = arr.length - 1;
+		while (low <= high) {
+			let mid = Math.floor((low + high)/2);
+			low += 1;
+			if(key > arr[mid]) low = mid + 1;	
+			else if(key < arr[mid]) high = mid - 1;
+			else if(key === arr[mid]){
+				result = mid;
+				break;
+			}
+		}
+		return result || -1;
+	}
+
+	console.log(BinarySearch(5, [2, 4, 6, 1, 5]));
 </script>
 </body>
 </html>

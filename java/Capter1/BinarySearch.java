@@ -2,7 +2,7 @@
 * @Author: Zhang Guohua
 * @Date:   2018-09-30 19:24:08
 * @Last Modified by:   zgh
-* @Last Modified time: 2018-10-07 18:24:54
+* @Last Modified time: 2018-10-08 19:44:01
 * @Description: create by zgh
 * @GitHub: Savour Humor
 */
@@ -25,8 +25,8 @@ public class BinarySearch {
 		int hi = a.length - 1;
 		while(lo <= hi){// 小于等于才可以一直查找
 			int mid = lo + (hi-lo)/2;
-			if(key < mid) hi = mid - 1;
-			else if(key > mid) lo = mid + 1;
+			if(key < a[mid]) hi = mid - 1;
+			else if(key > a[mid]) lo = mid + 1;
 			else return mid;
 		}
 		return -1;
@@ -38,7 +38,7 @@ public class BinarySearch {
 		while(!StdIn.isEmpty()){
 			int key = StdIn.readInt();
 			if(rank(key, list) < 0){
-				StdOut.printf("输出的是不存在 ", key);
+				StdOut.println(key);
 			}
 		}
 	}
